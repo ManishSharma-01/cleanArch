@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../../../core/failure/failure.dart';
 import '../../domain/entity/batch_entity.dart';
 import '../../domain/repository/batch_repository.dart';
