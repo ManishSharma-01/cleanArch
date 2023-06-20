@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -25,5 +27,11 @@ class AuthLocalRepository implements IAuthRepository {
   @override
   Future<Either<Failure, bool>> registerStudent(StudentEntity student) {
     return _authLocalDataSource.registerStudent(student);
+  }
+
+  @override
+  Future<Either<Failure, String>> uploadProfilePicture(File file) {
+    // TODO: implement uploadProfilePicture
+    throw UnimplementedError();
   }
 }

@@ -6,6 +6,7 @@ class StudentEntity {
   final String fname;
   final String lname;
   final String phone;
+  final String? image;
   final BatchEntity? batch;
   final List<CourseEntity> courses;
   final String username;
@@ -16,6 +17,7 @@ class StudentEntity {
     required this.fname,
     required this.lname,
     required this.phone,
+    this.image,
     this.batch,
     required this.courses,
     required this.username,
